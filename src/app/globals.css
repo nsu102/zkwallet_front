@@ -10,6 +10,13 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Custom Brand Colors */
+  --color-primary: #9b8bfa;
+  --color-primary-hover: #8a7ae9;
+  --color-nav-bg: #323232;
+  --color-border-active: #9b8bfa;
+  --color-border-inactive: #4a4a4a;
 }
 
 @media (prefers-color-scheme: dark) {
