@@ -7,29 +7,29 @@ interface LanguageSelectorProps {
 
 export default function LanguageSelector({ language, onLanguageChange }: LanguageSelectorProps) {
   return (
-    <div className="flex space-x-2">
+    <div className="flex gap-1.5 md:gap-2">
       <button
         onClick={() => onLanguageChange('KO')}
-        className={`flex items-center space-x-2 px-3 py-1 rounded-lg border-2 transition-all ${language === 'KO'
-            ? 'border-border-active bg-gray-700/50'
-            : 'border-border-inactive bg-gray-700/30 hover:border-gray-500'
+        className={`flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1 rounded-sm border transition-all ${language === 'KO'
+          ? 'border-border-active bg-gray-700/50 text-primary'
+          : 'border-border-inactive bg-gray-700/30 hover:border-gray-500 text-gray-300'
           }`}
       >
-        <span className="text-xl">🇰🇷</span>
-        <span className={`font-semibold ${language === 'KO' ? 'text-white' : 'text-gray-400'}`}>
+        <span className="text-lg md:text-xl">🇰🇷</span>
+        <span className={`text-sm md:text-base`}>
           KO
         </span>
       </button>
 
       <button
         onClick={() => onLanguageChange('EN')}
-        className={`flex items-center space-x-2 px-3 py-1 rounded-lg border-2 transition-all ${language === 'EN'
-            ? 'border-border-active bg-gray-700/50'
-            : 'border-border-inactive bg-gray-700/30 hover:border-gray-500'
+        className={`flex items-center gap-1 md:gap-2 px-2 md:px-3 py-1 rounded-sm border transition-all ${language === 'EN'
+          ? 'border-border-active bg-gray-700/50 text-primary'
+          : 'border-border-inactive bg-gray-700/30 hover:border-gray-500 text-gray-300'
           }`}
       >
-        <span className="text-xl">🇺🇸</span>
-        <span className={`font-semibold ${language === 'EN' ? 'text-white' : 'text-gray-400'}`}>
+        <span className="text-lg md:text-xl">🇺🇸</span>
+        <span className={`text-sm md:text-base`}>
           EN
         </span>
       </button>
