@@ -17,7 +17,7 @@ export default function TopBar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-nav-bg border-b border-gray-700">
+    <nav className="fixed top-0 z-[100] left-0 right-0 z-50 bg-nav-bg border-b border-gray-700">
       <div className="max-w-topbar mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20 gap-2 md:gap-4">
           <Logo />
