@@ -19,18 +19,18 @@ export default function HeroSection() {
           </div>
 
           <div className="relative z-10 h-full flex items-center">
-            <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-              <div className="max-w-3xl space-y-6 md:space-y-4">
-                <p className="text-sm md:text-lg font-medium text-white/90 tracking-wide uppercase">
+            <div className="md:pl-[7.999917979002625%]">
+              <div className='space-y-4 flex flex-col max-md:text-center justify-center'>
+                <p className="text-sm md:text-lg lg:text-[1.5vw] font-medium text-white/90 tracking-wide uppercase">
                   {HERO_CONTENT.smallTitle}
                 </p>
-                <h1 className="text-xl md:text-3xl lg:text-5xl font-bold text-white leading-tight">
+                <h1 className="text-3xl max-md:px-10 md:text-2xl lg:text-[2.8vw] font-bold text-white leading-tight">
                   {HERO_CONTENT.mainTitle.line1}
                   <br />
                   {HERO_CONTENT.mainTitle.line2}
                 </h1>
 
-                <div className="flex flex-col sm:flex-row items-start gap-3 md:gap-4 pt-4">
+                <div className="flex items-start w-full max-md:px-10 gap-3 md:gap-4 pt-4">
                   <Link
                     href={HERO_CONTENT.buttons.quote.href}
                     className="px-8 py-3 bg-white text-black rounded-md hover:bg-gray-100 transition-colors shadow-lg"
